@@ -1,0 +1,62 @@
+html {
+	background-color: #ffffff;
+	margin: 0;
+	padding: 0;
+}
+body {
+	padding: 0;
+	margin: 0;
+}
+div {
+	margin: 0;
+	padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	text-align: center;
+	font-family: 'Dosis', sans-serif;
+	margin: 2.5px;
+	padding: 0;
+}
+h1 {
+	font-weight: 600;
+	font-size: 50px;
+}
+h2 {
+	font-weight: 400;
+	font-size: 40px;
+}
+h3 {
+	font-size: 30px;
+	font-weight: 400;
+}
+h4 {
+	font-weight: 300;
+	font-size: 25px;
+}
+h5 {
+	font-weight: 200;
+	font-size: 40px;
+}
+h6 {
+	font-size: 30px;
+	font-weight: 200;
+}
+p.quote {
+	margin: 25px, 300px;
+}
+p {
+	font-size: 20px;
+	font-family: 'Cabin', sans-serif;
+	margin: 25px 250px;
+}
+
+.top {
+	background-color: #0000ff;
+	margin: 0;
+	padding: 10px;
+}
+.main {
+	background-color: #ffffff;
+	margin: 0;
+	padding: 10px 25px;
+}
