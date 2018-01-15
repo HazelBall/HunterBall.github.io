@@ -88,7 +88,7 @@ a:hover {
 #issues {
 	background-color: #444444;
 	color: #daa520;
-	padding: 50px 150px;
+	padding: 25px;
 }
 
 
@@ -123,7 +123,7 @@ a:hover {
 		background-color: white;
 	}
 	.splash {
-		margin: ;
+		padding: 10%;
 	}
 	.main {
 		padding: 5% 10%;
