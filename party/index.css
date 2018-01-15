@@ -36,6 +36,7 @@ a {
 	transition: 0.5s;
 	border: 2.5px solid black;
 	margin-top: 25px;
+	display: inline-block;
 }
 a:hover {
 	background-color: #aaaaaa;
@@ -52,7 +53,7 @@ a:hover {
 	background-color: #ffffff;
 	margin: 0;
 	padding: 0 0 0 15px;
-	border: 5px solid black;
+	border-bottom: 5px solid black;
 }
 .menu-item {
 	display: inline-block;
@@ -78,23 +79,40 @@ a:hover {
 	text-align: center;
 	background-color: #daa520;
 	margin: 0;
-	padding: 150px 50px;
+	padding: 150px;
 }
 .main {
 	background-color: white;
 	padding: 100px 150px;
 }
-
+#issues {
+	background-color: #444444;
+	color: #daa520;
+	padding: 50px 150px;
+}
 
 
 @media screen and (max-width: 675px) {
+	h1 {
+		margin: 0;
+		font-size: 35px;
+	}
+	h2 {
+		font-size: 30px;
+	}
+	h3 {
+		font-size: 22px;
+	}
+	p {
+		font-size: 17.5px;
+	}
 	.top {
 		padding: 0;
 		display: initial;
 		border: none;
 	}
 	.menu-item {
-		display:inline-block;
+		display:initial;
 		width: 33.33%;
 	}
 	.logo {
@@ -103,5 +121,14 @@ a:hover {
 		margin: 0;
 		display: initial;
 		background-color: white;
+	}
+	.splash {
+		margin: ;
+	}
+	.main {
+		padding: 5% 10%;
+	}
+	.no-mobile {
+		display: none;
 	}
 }
