@@ -1,7 +1,7 @@
 html, body {
 	margin: 0;
 	padding: 0;
-	background-color: #aaaaaa;
+	background-color: #444444;
 	font-family: 'Merriweather', serif;
 }
 h1, h3, h5, a{
@@ -39,7 +39,7 @@ a {
 	display: inline-block;
 }
 a:hover {
-	background-color: #aaaaaa;
+	background-color: #daa520;
 }
 .logo {
 	height: 100px;
@@ -68,7 +68,8 @@ a:hover {
 	border: none;
 }
 .active {
-	background-color: #dddddd;
+	background-color: #444444;
+	color: white;
 }
 .fullscreen {
 	width: 100%;
@@ -86,9 +87,8 @@ a:hover {
 	padding: 100px 150px;
 }
 #issues {
-	background-color: #444444;
-	color: #daa520;
-	padding: 25px;
+	background-color: #daa520;
+	color: white;
 }
 
 
@@ -113,7 +113,8 @@ a:hover {
 	}
 	.menu-item {
 		display:initial;
-		width: 33.33%;
+		width: 25%;
+		font-size: 17.5px;
 	}
 	.logo {
 		width: 100%;
