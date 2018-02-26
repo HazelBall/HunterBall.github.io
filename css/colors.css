@@ -1,0 +1,134 @@
+/*Light Blue*/
+.light-blue {
+	background-color: #0099ee;
+	color: white;
+}
+.light-blue .button {
+	background-color: #0099ee;
+	color: white;
+	border: 2px solid white;
+}
+.light-blue .button:hover {
+	background-color: white;
+	color: #0099ee;
+}
+/*___________________________________________________________________________________________________________________*/
+/*Green*/
+.green {
+	background-color: #10bbbb;
+	color: white;
+}
+.green .button {
+	background-color: #10bbbb;
+	border: 2px solid #202020;
+	color: #202020;
+}
+.green .button:hover {
+	background-color: #202020;
+	color: #10bbbb;
+}
+/*___________________________________________________________________________________________________________________*/
+/*Blue*/
+.blue {
+	background-color: #0066bb;
+	color: white;
+}
+.blue .button {
+	background-color: #0066bb;
+	color: white;
+	border: 2px solid white;
+}
+.blue .button:hover {
+	color: #0066bb;
+	background-color: white;
+}
+/*___________________________________________________________________________________________________________________*/
+/*Yellow*/
+.yellow {
+	background-color: #fafa20;
+	color: #202020;
+	border-color: #202020;
+}
+.yellow .button {
+	background-color: #fafa20;
+	border: 2px solid #202020;
+	color: #202020;
+}
+.yellow .button:hover {
+	background-color: #202020;
+	color: #fafa20;
+}
+/*___________________________________________________________________________________________________________________*/
+/*Dark Gray*/
+.dark-gray {
+	background-color: #202020;
+	color: #fafa20;
+}
+.dark-gray .button {
+	background-color: #202020;
+	color: #fafa20;
+	border: 2px solid #fafa20;
+}
+.dark-gray .button:hover {
+	background-color: #fafa20;
+	color: #202020;
+}
+/*___________________________________________________________________________________________________________________*/
+/*White Colors*/
+.white-black {
+	background-color: white;
+	color: black;
+}
+.white-black .button {
+	background-color: white;
+	border: 2px solid black;
+	color: black;
+}
+.white-black .button:hover {
+	background-color: black;
+	color: white;
+}
+
+.white-blue {
+	background-color: white;
+	color: black;
+}
+.white-blue .button {
+	background-color: white;
+	border: 2px solid #0066bb;
+	color: #0066bb;
+}
+.white-blue .button:hover {
+	background-color: #0066bb;
+	color: white;
+	border: 2px solid #0066bb;
+}
+
+.white-red {
+	background-color: white;
+	color: black;
+}
+.white-red .button {
+	background-color: white;
+	border: 2px solid #d20000;
+	color: #d20000;
+}
+.white-red .button:hover {
+	background-color: #d20000;
+	color: white;
+}
+
+.white-green {
+	background-color: white;
+	color: black;
+}
+.white-green .button {
+	background-color: white;
+	color: #10bbbb;
+	border: 2px solid #10bbbb;
+}
+.white-green .button:hover {
+	color: white;
+	background-color: #10bbbb;
+}
+/*___________________________________________________________________________________________________________________*/
