@@ -53,13 +53,13 @@ var toApps = function() {
 	screen == 1;
 }
 var back = function() {
-	if(screen === 0) {
+	if(screen ===0) {
 		return;
 	}
-	else if(screen == 1) {
+	else if(screen === 1) {
 		toSplash();
 	}
-	else if(screen == 2) {
+	else if(screen === 2) {
 		toApps();
 	}
 }
