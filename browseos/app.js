@@ -32,6 +32,7 @@ var time = function() {
   $(".splash .time").html(time);
 }
 var toSplash = function() {
+	time();
 	$(".apps").fadeOut(250, function() {
 		$(".apps").hide();
 		$(".splash").fadeIn();
