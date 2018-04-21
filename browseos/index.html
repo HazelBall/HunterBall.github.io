@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Experimental OS</title>
+		<link rel = "stylesheet" type = "text/css" href = "style.css">
+		<link href="https://fonts.googleapis.com/css?family=Muli:200,400,700,900" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<div class = "load">
+			<h1>BrowseOS</h1>
+			<p>Smartphones have never been simpler</p>
+		</div>
+		<div class = "splash">
+			<h2 class = "date"></h2>
+			<h1 class = "time"></h1>
+			<br>
+			<h2 onClick = "toApps()">&#9776;</h2>
+		</div>
+		<div class = "apps">
+			<div class = "buttons">
+				<a class = "button-back" onclick = "back()">&#9665;</a>
+				<a class = "button-home" onclick = "toSplash()">&#9711;</a>
+				<a class = "button-apps" onclick = "toApps()">&#9634;</a>
+			</div>
+			<div class = "app" id = "app-call">
+				<div class = "header">
+					<h3>Phone</h3>
+				</div>
+				<div class = "content">
+					<h1>Phone</h1>
+					<h4 class = "phoneNumber"></h4>
+					<a class = "num num-lock">1</a>
+					<a class = "num num-lock">2</a>
+					<a class = "num num-lock">3</a>
+					<a class = "num num-lock">4</a>
+					<a class = "num num-lock">5</a>
+					<a class = "num num-lock">6</a>
+					<a class = "num num-lock">7</a>
+					<a class = "num num-lock">8</a>
+					<a class = "num num-lock">9</a>
+					<a class = "deleteNum num-lock">Back</a>
+					<a class = "num num-lock">0</a>
+					<a class = "callNum num-lock">Call</a>
+				</div>
+			</div>
+			<div class = "app" id = "app-text">
+				<div class = "header">
+					<h3>Text</h3>
+				</div>
+				<div class = "content">
+					<h1>Test Content</h1>
+					<p>This stuff should not show up.</p>
+				</div>
+			</div>
+			<div class = "app" id = "app-weather">
+				<div class = "header">
+					<h3>Weather</h3>
+				</div>
+				<div class = "content">
+					<h1>Test Content</h1>
+					<p>This stuff should not show up.</p>
+				</div>
+			</div>
+			<div class = "app" id = "app-browser">
+				<div class = "header">
+					<h3>Browser</h3>
+				</div>
+				<div class = "content">
+					<h1>Test Stuff</h1>
+				</div>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src = "app.js"></script>
+	</body>
+</html>
