@@ -43,16 +43,17 @@ var toApps = function() {
 	$(".splash").fadeOut(250, function() {
 		$(".splash").hide();
 		$(".apps").fadeIn(250);
+		$(".apps .header").show();
 	});
 	$(".app .content").fadeOut(250, function() {
 		$(".app .content").hide();
 		$(".app").show();
 		$(".app .header").show();
 	});
-	screen = 1;
+	screen == 1;
 }
 var back = function() {
-	if(screen == 0) {
+	if(screen === 0) {
 		return;
 	}
 	else if(screen == 1) {
@@ -63,10 +64,11 @@ var back = function() {
 	}
 }
 $(".app").on("click", function(event) {
+	$(".apps .header").hide();
 	$(".app").not(this).hide();
 	$(this).children(".content").fadeIn();
 	$(this).children(".header").hide();
-	screen = 2;
+	screen == 2;
 })
 $("#app-call .content .num").on("click", function(event){
 	$("#app-call .content .phoneNumber").append($(this).text())
