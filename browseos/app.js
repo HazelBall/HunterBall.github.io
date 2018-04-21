@@ -37,7 +37,7 @@ var toSplash = function() {
 		$(".apps").hide();
 		$(".splash").fadeIn();
 	});
-	screen = 0;
+	screen == 0;
 }
 var toApps = function() {
 	$(".splash").fadeOut(250, function() {
