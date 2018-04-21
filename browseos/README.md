@@ -1,2 +1,4 @@
-#So this is basically a experimental GUI i made using HTML 5, CSS 3, and JavaScript (and JQuery). Its pretty cool, still got some issues though.#
+# BrowseOS
+## An experimental OS GUI built on HTML, CSS, JS, and JQuery
+
 I don't remember how to do readme's...
