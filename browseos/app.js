@@ -37,7 +37,7 @@ var toSplash = function() {
 		$(".apps").hide();
 		$(".splash").fadeIn();
 	});
-	screen == 0;
+	screen = 0;
 }
 var toApps = function() {
 	$(".splash").fadeOut(250, function() {
@@ -50,7 +50,7 @@ var toApps = function() {
 		$(".app").show();
 		$(".app .header").show();
 	});
-	screen == 1;
+	screen = 1;
 }
 var back = function() {
 	if(screen == 0) {
@@ -68,7 +68,7 @@ $(".app").on("click", function(event) {
 	$(".app").not(this).hide();
 	$(this).children(".content").fadeIn();
 	$(this).children(".header").hide();
-	screen == 2;
+	screen = 2;
 })
 $("#app-call .content .num").on("click", function(event){
 	$("#app-call .content .phoneNumber").append($(this).text())
