@@ -1,4 +1,5 @@
 var screen = 0;
+var storage = window.localStorage;
 $(document).ready(function() {
 	loadScreen();
 });
@@ -6,25 +7,49 @@ var loadScreen = function() {
 	$(".apps").hide();
 	$(".splash").hide();
 	$(".load").hide();
+	$(".startup").hide();
+	$(".setup").hide();
 	setTimeout(function() {
 		$(".load").fadeIn(1000, function() {
 			setTimeout(function() {
 				$(".load").fadeOut(1000, function() {
-					setTimeout(function() {
-						time();
-						$(".splash").fadeIn(500, function() {});
-					}, 750);
+					if(storage.getItem('browseName') !== null) {
+						var name = storage.getItem('browseName');
+						console.log(name);
+						$(".profile-name").text("Name: " + name);
+						setTimeout(function() {
+							time();
+							$(".splash").fadeIn(500, function() {});
+						}, 750);
+					} else {
+						setTimeout(function() {
+							toStartup();
+							$(".startup").fadeIn(500, function() {});
+						}, 750);
+					}
 				});
 			}, 2500);
 		});
 	}, 750);
+}
+var fadeOutAll = function() {
+	$(".apps").fadeOut(500, function() {});
+	$(".app").fadeOut(500, function() {});
+	$(".setup").fadeOut(500, function() {});
+	$(".splash").fadeOut(500, function() {});
+	$(".startup").fadeOut(500, function() {});
+	$(".load").fadeOut(500, function() {});
 }
 var time = function() {
 	var d = new Date();
 	var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
   $(".splash .date").html(months[d.getMonth()] + " " + d.getDate());
   var time = "";
-  time += Math.floor(d.getHours()/2) + ":";
+  if(Math.floor(d.getHours()/2) !== 0) {
+  	time += Math.floor(d.getHours()/2) + ":";
+  } else {
+  	time += "12:";
+  }
   if(d.getMinutes() < 10) {
     	time += "0";
     }
@@ -62,6 +87,32 @@ var back = function() {
 	else if(screen == 2) {
 		toApps();
 	}
+}
+var toStartup = function() {
+	$(".setup").hide();
+}
+var startSetup = function() {
+	$(".startup").fadeOut(500, function() {
+		$(".setup").fadeIn(500, function() {});
+	});
+}
+var finishSetup = function() {
+	if($(".setup .setupName").val() !== null && $(".setup .setupName").val() !== "") {
+		storage.setItem('browseName', $(".setup .setupName").val());
+		fadeOutAll();
+		loadScreen();
+	}
+}
+var guest = function() {
+	storage.setItem('browseName', 'Guest');
+	fadeOutAll();
+	loadScreen();
+}
+var logout = function() {
+	storage.removeItem("browseName");
+	$(".setup .setupName").val("")
+	fadeOutAll();
+	loadScreen();
 }
 $(".app").on("click", function(event) {
 	$(".apps .header").hide();
