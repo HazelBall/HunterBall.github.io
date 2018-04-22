@@ -11,6 +11,17 @@
 			<h1>BrowseOS</h1>
 			<p>Smartphones have never been simpler</p>
 		</div>
+		<div class = "startup">
+			<h1>Welcome!</h1>
+			<p>You don't seem to be logged in! You can either log in or use BrowseOS under a guest account.</p>
+			<a onclick = "startSetup()">Setup BrowseOS</a><br>
+			<a onclick = "guest()">Use BrowseOS as Guest</a>
+		</div>
+		<div class = "setup">
+			<h1>BrowseOS Setup</h1>
+			<input class = "setupName" type = "text" placeholder = "Name:"><br><br>
+			<a onclick = "finishSetup()">Finish Setup</a>
+		</div>
 		<div class = "splash">
 			<h2 class = "date"></h2>
 			<h1 class = "time"></h1>
@@ -71,6 +82,18 @@
 				</div>
 				<div class = "content">
 					<h1>Test Stuff</h1>
+				</div>
+			</div>
+			<div class = "app" id = "app-settings">
+				<div class = "header">
+					<h3>Settings</h3>
+				</div>
+				<div class = "content">
+					<h1>Settings</h1>
+					<hr>
+					<h3>Current Profile</h3>
+					<p class = "profile-name">Name: </p>
+					<p onclick = "logout()">Logout</p>
 				</div>
 			</div>
 		</div>
