@@ -28,6 +28,9 @@ h6 {
 p, a, input {
 	font-size: 20px;
 }
+a {
+	display: block;
+}
 iframe {
 	position:fixed;
 	z-index: 900;
@@ -49,6 +52,12 @@ iframe {
 	text-align: center;
 	margin: 5px;
 }
+.startup, .setup {
+	background-color: #ffffff;
+	padding: 50px;
+	height: 100vh;
+	box-sizing: border-box;
+}
 .splash {
 	background-color: #f6f6f6;
 	padding: 50% 50px 0 50px;
@@ -62,6 +71,10 @@ iframe {
 .apps {
 	padding: 50px;
 	background-color:#ffffff;
+}
+.apps .app .header h3 {
+	line-height: 1;
+	margin: 0;
 }
 .app {
 	margin: 20px 0;
