@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Legend High School | Colorado Bluebird Project</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<!--My Stylesheet-->
+    <link rel = "stylesheet" type = "text/css" href = "style.css">
+    <link rel = "icon" type = "image/png" href = "images/logo.png">
+    <!--Imports-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cantata+One|Roboto:400,700" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<img class = "half left" src = "images/logo-header.png">
+			<div class = "clear"></div>
+		</header>
+		<nav>
+			<div class = "nav-limit">
+				<a class = "no-desktop" id = "menuButton">&#9776;</a>
+				<a href = "index.html">The Colorado Bluebird Project</a>
+				<div class = "dropdown no-mobile">
+					<a>Birdhouses</a>
+					<div class = "dropdown-content">
+						<a href = "about.html">About</a>
+						<a href = "outcome.html">Outcomes</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div class = "nav-mobile no-desktop">
+			<h6>Colorado Bluebird Project</h6>
+			<hr>
+			<a href = "index.html">Home</a>
+			<a href = "about.html">About</a>
+			<a href = "outcome.html">Outcomes</a>
+		</div>
+		<div class = "container">
+			<h1>Outcomes</h1>
+			<hr>
+			<p><img style = "margin: 0 2.5%" class = "third right" src = "images/05.JPG">The Legend High School EDGE program created 13 bluebird nest boxes for Eastern, Mountain, and Western bluebirds. I was in charge of watching and recording what happened over the summer months while school was out, for any fledglings, eggs, or activity. Below are some of the results I found.</p>
+			<br>
+			<h4>Nests</h4>
+			<hr>
+			<p>As of August 3rd, 2018, there are three nestboxes with nests, and three with a small ammount of twigs. I could not identify which species had built the nests, but they are probably not Bluebirds, and they are likely not living there anymore, as I saw no signs of life or change in the nest boxes since the end of June. There were also no eggs or fledglings observed.</p>
+			<br>
+			<h4>Conclusion</h4>
+			<hr>
+			<p><img style = "margin: 0 2.5%;" class = "third left" src = "images/08.JPG">There are many factors in whether Bluebird nest boxes are successful or not. One of the problems was location. Eastern Bluebirds, which are the most prominent species where we are, prefer nest boxes in meadows or areas with low grass so they can find insects and worms to eat. Our nest boxes were placed in the forest, with large shrubs around, which makes it harder for Eastern Bluebirds to find food. Also, Bluebirds are very protective of their teritory, and each nest box should be placed 200-300 feet apart. However, our nest boxes were much closer, between 20 and 50 feet apart, meaning only a few would end up being inhabited.</p>
+			<p>One of the other problems was timing. Bluebirds start migrating, and can even make their way to Colorado, in February and March. Our nest boxes should have been placed around this time, to ensure the birds would find them in time for the first brood of the season, but we placed them in May, likely taking place after the first brood, limiting the chances of the birds accepting the birdhouses.</p>
+			<br>
+			<h4>Next Year</h4>
+			<hr>
+			<p>As this years season wraps up and the bluebirds start migrating away again, it is important to learn from the mistakes and factors we didn't consider this past year. One of the things I would like to do differently is create the birdhouses before winter, so that they are ready to be placed in February and March when bluebirds start appearing. I would also like to educate the students creating the birdhouses about the proper placement of the houses, so that Bluebirds will be more likely to accept the boxes during the mating season. If this education takes place, and students are properly informed, we will likely have much more success with our birdhouses.</p>
+		</div>
+		<footer>
+			<div class = "footer-limit">
+				<div class = "third left no-mobile">
+					<h6>Colorado Bluebird Project</h6>
+					<a href = "index.html">Home</a>
+					<a href = "about.html">About</a>
+				</div>
+				<div class = "third left no-mobile">
+					<h6>Birdhouses</h6>
+					<a href = "outcome.html">Outcome</a>
+				</div>
+				<div class = "third left no-mobile">
+					<h6>Legend High School</h6>
+					<a href = "legendtitans.org">LHS Homepage</a>
+					<a href = "legendedge.org">EDGE Home</a>
+				</div>
+				<div class = "clear"></div>
+				<div>
+					<p><em>Website Created by Hunter Ball</em></p>
+				</div>
+			</div>
+		</footer>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$(".dropdown-item").hide();
+			});
+			$(document).click(function() {
+				if($(".nav-mobile").hasClass("active")) {
+					$(".nav-mobile").toggleClass("active");
+				}
+				$(".dropdown-item").hide();
+			});
+			$('#menuButton').click(function( event) {
+				event.stopPropagation();
+				$('.nav-mobile').toggleClass("active");
+			});
+			$('.nav-mobile').click(function( event) {
+				event.stopPropogation();
+			});
+		</script>
+	</body>
+</html>

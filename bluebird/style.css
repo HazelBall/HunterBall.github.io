@@ -1,0 +1,252 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-image: url("images/background.jpg");
+	background-repeat: repeat;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Cantata One', serif;
+	font-weight: 400;
+	margin: 5px 0;
+}
+p, a, input, blockquote, li {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+}
+p {
+	line-height: 1.5;
+}
+h1 {
+	font-size: 48px;
+}
+h2 {
+	font-size: 36px;
+}
+h3 {
+	font-size: 28px;
+}
+h4 {
+	font-size: 24px;
+}
+h5 {
+	font-size: 20px;
+}
+h6 {
+	font-size: 18px;
+}
+hr {
+	border: 1px solid rgba(0,0,0,.5);
+}
+/*Navigation Stuff*/
+nav {
+	background-color: #DCC79F;
+	box-shadow: 0 2px 2px #00000099;
+	margin: 0;
+	padding: 0 50px;
+	position: sticky;
+	top: 0px;
+	z-index: 100;
+}
+.nav-limit {
+	max-width: 900px;
+	margin: 0 auto;
+}
+nav a {
+	display: inline-block;
+	padding: 15px 10px;
+	text-decoration: none;
+	color: #202020;
+	vertical-align: middle;
+}
+nav .nav-limit > a, nav .dropdown > a {
+	font-family: 'Cantana One', serif;
+}
+nav a:hover, nav .dropdown:hover {
+	cursor: pointer;
+	color: black;
+}
+nav .dropdown {
+	display: inline-block;
+	vertical-align: middle;
+}
+nav .dropdown .dropdown-content {
+	padding-bottom: 5px;
+	border-radius: 0 0 5px 5px;
+	border-top: 2px solid rgba(40,40,40,0.5);
+	display: none;
+	background-color: #DCC79F;
+	box-shadow: 0 2px 2px #00000099;
+	min-width: 200px;
+}
+nav .dropdown .dropdown-content .divider {
+	padding-bottom: 2.5px;
+	margin-bottom: 2.5px;
+	border-bottom: 1px solid rgba(0,0,0,0.15);
+	width: 100%;
+}
+nav .dropdown .dropdown-content a {
+	padding: 5px 15px;
+	display: block;
+	color: #202020;
+	font-size: 14px;
+}
+nav .dropdown:hover > a {
+	color: black;
+}
+nav .dropdown:hover .dropdown-content {
+	display: block;
+	position: absolute;
+	cursor: pointer;
+}
+nav .dropdown .dropdown-content a:hover {
+	background-color: #BAA57D;
+	color: black;
+}
+nav .dropdown .dropdown-content .nav-button {
+	padding: 5px 10px;
+	background-color: white;
+	color: #404040;
+	margin: 10px;
+	border-radius: 5px;
+	text-align: center;
+}
+nav .dropdown .dropdown-content .nav-button:hover {
+	color: black;
+	background-color: #c0c0c0;
+}
+nav .logo {
+	padding: 0;
+	display: inline-block;
+	margin: 0 20px;
+	height: 30px;
+	vertical-align: middle;
+}
+nav .logo-a {
+	padding: 0 !important;
+	margin: 0;
+}
+/*Mobile Nav*/
+.nav-mobile {
+	z-index: 1000;
+	box-sizing: border-box;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 75%;
+	max-width: 600px;
+	height: 101%;
+	background-color: #eeeedd;
+	padding: 20px;
+	padding-top: 40px;
+	color: black;
+	border-right: 2px solid rgba(40,40,40,0.5);
+	box-shadow: 0 0 5px black;
+	transform: translate(-100%, 0);
+	transition: 0.25s;
+}
+.nav-mobile.active {
+	transform: translate(0, 0);
+}
+.nav-mobile a {
+	display: block;
+	padding: 10px 0;
+	text-decoration: none;
+	color: black;
+}
+/*Main Content*/
+header {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 50px 0;
+	box-sizing: border-box;
+}
+.container {
+	max-width: 900px;
+	margin: 20px auto;
+	padding: 25px 65px;
+	border-radius: 10px;
+	background-color: rgb(238,238,221, .65);
+}
+footer {
+	background-color: #DCC79F;
+}
+.footer-limit {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 50px 65px;
+}
+footer div {
+	text-align: center;
+}
+footer h6 {
+	text-decoration: underline;
+}
+footer a {
+	display: block;
+	margin: 5px 0;
+	color: #303030;
+	text-decoration: none;
+}
+footer a:hover {
+	cursor: pointer;
+}
+/*Utilities*/
+.half {
+	width: 50%;
+}
+.third {
+	width: 30%;
+	margin: 1.5%;
+}
+.two-thirds {
+	width: 63%;
+	margin: 1.5%;
+}
+.full-width {
+	width: 100%;
+	margin: 0;
+}
+.right {
+	float: right;
+}
+.left {
+	float: left;
+}
+.clear {
+	clear: both;
+}
+.no-desktop {
+	display: none;
+}
+/*Media Queries*/
+@media screen and (max-width: 1000px) {
+	.container {
+		margin: 10px 25px;
+		padding: 20px 25px;
+	}
+}
+@media screen and (max-width: 600px) {
+	.third {
+		width: 100%;
+	}
+	.two-thirds {
+		width: 100%;
+	}
+	.half {
+		width: 100%;
+	}
+	.no-mobile {
+		display: none !important;
+	}
+	footer div {
+		float: none;
+	}
+	.no-desktop {
+		display: initial;
+	}
+}
+@media screen and (max-width: 350px) {
+	
+}
