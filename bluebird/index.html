@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Legend High School | Colorado Bluebird Project</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<!--My Stylesheet-->
+    <link rel = "stylesheet" type = "text/css" href = "style.css">
+    <link rel = "icon" type = "image/png" href = "images/logo.png">
+    <!--Imports-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cantata+One|Roboto:400,700" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<img class = "half left" src = "images/logo-header.png">
+			<div class = "clear"></div>
+		</header>
+		<nav>
+			<div class = "nav-limit">
+				<a class = "no-desktop" id = "menuButton">&#9776;</a>
+				<a href = "index.html">The Colorado Bluebird Project</a>
+				<div class = "dropdown no-mobile">
+					<a>Birdhouses</a>
+					<div class = "dropdown-content">
+						<a href = "about.html">About</a>
+						<a href = "outcome.html">Outcomes</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div class = "nav-mobile no-desktop">
+			<h6>Colorado Bluebird Project</h6>
+			<hr>
+			<a href = "index.html">Home</a>
+			<a href = "about.html">About</a>
+			<a href = "outcome.html">Outcomes</a>
+		</div>
+		<div class = "container">
+			<div class = "two-thirds left">
+				<hr>
+				<h1>Colorado Bluebird Project</h1>
+				<p>The Colorado Bluebird Project is a volunteer run project operating under the guidance of Audubon Society of Greater Denver. It aims to improve the population and health of Bluebirds in Colorado, and to educate the public about Bluebirds.</p>
+				<p>Volunteers place and keep up with Bluebird nest boxes to track population, fledgings, eggs, and hatches, in order to gather more information about Bluebirds.</p>
+				<hr>
+				<img class = "full-width" src = "images/01.JPG">
+				<h3>Legend High School's birdhouses</h3>
+				<p>In 2018, Legend High School's EDGE Program set out to create birdhouses to help out the Colorado Bluebird Project. We created a total of 13 nest boxes, placed around the school. My job is to track them during the summer, write down what happens, and record it on this website!</p>
+				<p>You can find <a href = "about.html">information on bluebirds and their birdhouses</a> and <a href = "outcome.html">birdhouse outcomes and updates</a>.</p>
+				<hr>
+			</div>
+			<div class = "third left">
+				<img class = "full-width" src = "images/03.JPG">
+				<hr>
+				<h4>Want to create your own birdhouses?</h4>
+				<p>Creating your own birdhouse for bluebirds is easy and fun! Just use our <a href = "about.html#diy">instructions</a> and read through our <a href = "about.html#tips">helpful tips</a> to make sure you see bluebirds when you create and put your birdhouse up!</p>
+				<hr>
+				<img src = "images/02.JPG" class = "full-width">
+			</div>
+			<div class = "clear"></div>
+		</div>
+		<footer>
+			<div class = "footer-limit">
+				<div class = "third left no-mobile">
+					<h6>Colorado Bluebird Project</h6>
+					<a href = "index.html">Home</a>
+					<a href = "about.html">About</a>
+				</div>
+				<div class = "third left no-mobile">
+					<h6>Birdhouses</h6>
+					<a href = "outcome.html">Outcome</a>
+				</div>
+				<div class = "third left no-mobile">
+					<h6>Legend High School</h6>
+					<a href = "legendtitans.org">LHS Homepage</a>
+					<a href = "legendedge.org">EDGE Home</a>
+				</div>
+				<div class = "clear"></div>
+				<div>
+					<p><em>Website Created by Hunter Ball</em></p>
+				</div>
+			</div>
+		</footer>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$(".dropdown-item").hide();
+			});
+			$(document).click(function() {
+				if($(".nav-mobile").hasClass("active")) {
+					$(".nav-mobile").toggleClass("active");
+				}
+				$(".dropdown-item").hide();
+			});
+			$('#menuButton').click(function( event) {
+				event.stopPropagation();
+				$('.nav-mobile').toggleClass("active");
+			});
+			$('.nav-mobile').click(function( event) {
+				event.stopPropogation();
+			});
+		</script>
+	</body>
+</html>
