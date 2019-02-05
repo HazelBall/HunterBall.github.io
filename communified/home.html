@@ -119,9 +119,10 @@
 						} else {
 							newClass.update({
 								students: firebase.firestore.FieldValue.arrayUnion(userId)
+							}).then(function() {
+								window.alert("Class Successfully Added")
+								window.location.reload();
 							});
-							window.alert("Class Successfully Added")
-							window.location.reload();
 						}
 					});
 				}
