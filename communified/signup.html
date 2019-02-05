@@ -104,10 +104,11 @@
 		  					userName: newName,
 		  					userEmail: email.value,
 		  					userAvatar: null
+		  				}).then(function() {
+		  					window.location.href = "home.html"
 		  				});
 		  			}
 		  		});
-		  		window.location.href = "home.html"
 		  	} else {
 		  		console.log('not logged in');
 		  	}
