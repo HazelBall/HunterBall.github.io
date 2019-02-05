@@ -97,7 +97,7 @@
 		  	if(firebaseUser) {
 		  		userDoc = userDb.doc(firebaseUser.uid);
 		  		userDoc.get().then(function (doc) {
-		  			var data = doc.data();
+		  			console.log(doc.exists)
 		  			if(!doc.exists) {
 		  				var newName = nameInput.value;
 		  				userDoc.set({
@@ -107,7 +107,7 @@
 		  				});
 		  			}
 		  		});
-		  		window.location.href = "home.html"
+		  		//window.location.href = "home.html"
 		  	} else {
 		  		console.log('not logged in');
 		  	}
