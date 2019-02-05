@@ -121,8 +121,7 @@
 						if(doc) {
 							var data = doc.data();
 							studentName = data.userName;
-							console.log(studentName);
-							var newObj = '<li><a href = "user.html?id='+ classStudents[i] + '">' + studentName + '</a></li>';
+							var newObj = '<li><a href = "user.html?id='+ doc.id + '">' + studentName + '</a></li>';
 							$('.classStudents').append(newObj);
 						}
 					});
@@ -134,7 +133,7 @@
 						if(doc) {
 							var data = doc.data();
 							teacherName = data.userName;
-							var newObj = '<li><a href = "user.html?id=' + classTeachers[i] + '">' + teacherName + '</a></li>';
+							var newObj = '<li><a href = "user.html?id=' + doc.id + '">' + teacherName + '</a></li>';
 							$('.classTeachers').append(newObj);
 						}
 					});
