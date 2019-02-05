@@ -87,3 +87,22 @@ button {
 	padding: 25px 10px;
 	margin: 0 auto;
 }
+.class {
+	padding: 10px;
+	margin: 10px 0;
+	border: 1px solid black;
+}
+.class .title {
+	float: left;
+}
+.class a {
+	float:right;
+}
+.class p {
+	clear: both;
+}
+.class .code {
+	margin: 0;
+	font-size: 14px;
+	line-height: 1;
+}
