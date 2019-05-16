@@ -1,0 +1,202 @@
+<!doctype html>
+<html>
+	<head>
+		<title>8000-7000BC</title>
+		<!--Styles-->
+		<style>
+			body, html {
+				margin: 0;
+				padding: 0;
+				font-family: sans-serif;
+				background-color: #e0e0e0;
+			}
+			h1, h2, h3, h4, h5, h6 {
+				line-height: 1;
+				margin: 10px 0;
+			}
+			p {
+				line-height: 1.325;
+			}
+			.header {
+				background-color: #9b7653;
+				color: white;
+				margin: 0;
+				padding: 10px 25px;
+			}
+			.timeline {
+				margin: 20px 5vw 20px 45vw;
+				box-sizing: border-box;
+				border-left: 5px solid #9b7653;
+				padding: 10px;
+				position: relative;
+			}
+			.timeline-date {
+				position: relative;
+				background-color: rgba(255,255,255,0.5);
+				border-radius: 20px;
+				padding: 15px;
+				width: 20vw;
+				box-shadow: 1px 0 5px 0 rgba(0,0,0,0.3);
+			}
+			.timeline-date + .timeline-date {
+				margin-top: 50px;
+			}
+			.timeline-date h5 {
+				position: absolute;
+				top: 5px;
+				left: calc(-20px - 40vw);
+				width: 40vw;
+				text-align: right;
+			}
+			.modal {
+				display: none;
+				position: fixed;
+				z-index: 900;
+				top: 0;
+				left: 0;
+				width: 100vw;
+				height: 100vh;
+				overflow: auto;
+				background-color: rgba(0,0,0,0.4);
+			}
+			.modal .content {
+				position: fixed;
+				z-index: 1000;
+				top: 15vh;
+				left: 25vw;
+				width: 50vw;
+				height: 70vh;
+				overflow-y: scroll;
+				background-color: white;
+				border-radius: 20px;
+				padding: 10px 20px;
+				padding-right: 50px;
+				box-sizing: border-box;
+				box-shadow: 1px 0 5px 0 rgba(0,0,0,0.3);
+			}
+			.modal .close {
+				position: fixed;
+				top: calc(15vh + 5px);
+				font-size: 30px;
+				right: calc(25vw + 20px);
+				cursor: pointer;
+			}
+			.modal img {
+				width: 50%;
+				margin: 0 25%;
+				height: auto;
+				border-radius: 5px;
+				box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+			}
+			.footer {
+				padding: 20px;
+				background-color: white;
+			}
+			.container {
+				padding: 20px 50px;
+				margin: 0 auto;
+				width: 50vw;
+				box-sizing: border-box;
+			}
+		</style>
+	</head>
+	<body>
+		<!--Header-->
+		<div class = "header">
+			<h1>8000-7000BC</h1>
+			<h4>The beginning of the neolithic era, the last part of the stone age, this millennium is one of the most important for humans. The start of agriculture and farming, the domestication of animals, and many more important evolutions in humanity happened in this era. Use the timeline below to see the most interesting events that occured between 8000BC and 7000BC!</h4>
+		</div>
+		<!--The actual timeline-->
+		<div class = "timeline">
+			<div class = "timeline-container">
+				<div class = "timeline-date">
+					<h5>~8000BC</h5>
+					<div class = "content">
+						<h3>The Beginnings of Settlements</h3>
+						<p>Settlements began in Turkey, Norway, Sweden, Nigeria, and Denmark.</p>
+						<a class = "button" data-modal="modal-one" href = "#">Read More</a>
+					</div>
+				</div>
+				<div class = "timeline-date">
+					<h5>~7500BC</h5>
+					<div class = "content">
+						<h3>Domestication</h3>
+						<p>First domesticated cats and cattle.</p>
+						<a class = "button" data-modal = "modal-two" href = "#">Read More</a>
+					</div>
+				</div>
+				<div class = "timeline-date">
+					<h5>~7300BC</h5>
+					<div class = "content">
+						<h3>Jericho Settlement Ends</h3>
+						<p>The Jericho settlement ends.</p>
+						<a class = "button" data-modal = "modal-three" href = "#">Read More</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class = "container">
+			Although not many specific events happened during the 8th Millennium BC, many advancements in society and humanity occured. At the start of the millennium, almost all people on Earth were hunter-gatherers, with few Neolithic settlements in more densly packed areas. However, by the end of it, there were flourishing settlements with domesticated cats, cattle, pigs, and cultivated wheat, barley, and more. This millennium will not go down as the most important, but it led to civilization as we know it.
+		</div>
+		<!--Footer-->
+		<div class = "footer">
+			<h6>Copyright &copy; 2019 by Hunter Ball. All rights reserved.</h6>
+		</div>
+		<!--All Modals-->
+		<div class = "modals">
+			<div class = "modal" id = "modal-one">
+				<div class = "content">
+					<h2>The Beginnings of Settlements</h2>
+					<h3 class = "close">&times;</h3>
+					<img src = "jericho.jpg">
+					<p>With a world population of over 5,000,000 Settlements in present day Turkey, Norway, England, Nigeria, and Denmark are established around this time. A settlement in  Franchthi Cave in Peloponnese, continues. This settlement was continuously occupied since 20,000 BC and will last for nearly 5000 more years. Although there are no settlements, native hunter-gatherers populated most of the North American Great Plains at this time.</p>
+					<p>In northern Mesopotamia, now northern Iraq, cultivation of barley and wheat begins. At first they are used for beer, gruel, and soup, eventually for bread. In early agriculture at this time, the planting stick is used, but it is replaced by a primitive plow in subsequent centuries. Around this time, a round stone tower, now preserved to about 8.5 meters high and 8.5 meters in diameter is built in Jericho.</p>
+					<p>Bladed tools found in southwest Iran date from around 8000 BC; they were made from obsidian that had been transported from Anatolia.</p>
+				</div>
+			</div>
+			<div class = "modal" id = "modal-two">
+				<div class = "content">
+					<h2>Domestication</h2>
+					<h3 class = "close">&times;</h3>
+					<img src = "cattle.jpg">
+					<p>The first known domestication of the Cat. Cattle were first domesticated in the Sahara at this time.</p>
+					<p>More settlements are created in Turkey, as well as Scotland.</p>
+				</div>
+			</div>
+			<div class = "modal" id = "modal-three">
+				<div class = "content">
+					<h2>Jericho Settlement Ends</h2>
+					<h3 class = "close">&times;</h3>
+					<img src = "jericho.jpg">
+					<p>End of the large settlement at Jericho. Jericho had the first known settlement-wide wall, and there is evidence there was a population of 2000-3000 and domesticated wheat and barley.</p>
+					<p>The first signs of domestic pigs was also around this point in time.</p>
+				</div>
+			</div>
+		</div>
+		<!--Scripts-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script>
+  		var modalBtns = [...document.querySelectorAll(".button")];
+			modalBtns.forEach(function(btn){
+			  btn.onclick = function() {
+			    var modal = btn.getAttribute('data-modal');
+			    document.getElementById(modal).style.display = "block";
+			  }
+			});
+			
+			var closeBtns = [...document.querySelectorAll(".close")];
+			closeBtns.forEach(function(btn){
+			  btn.onclick = function() {
+			    var modal = btn.closest('.modal');
+			    modal.style.display = "none";
+			  }
+			});
+			
+			window.onclick = function(event) {
+			  if (event.target.className === "modal") {
+			    event.target.style.display = "none";
+			  }
+			}
+  	</script>
+	</body>
+</html>
